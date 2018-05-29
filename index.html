@@ -6,7 +6,7 @@
   <title>Your House - Real Estate Agency</title>
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/stylish-portfolio.css" rel="stylesheet">
@@ -31,7 +31,10 @@
   <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
   <nav id="sidebar-wrapper">
     <ul class="sidebar-nav">
-      <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+      <li>
+        <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+      </li>
+      <!--<a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>-->
       <li class="sidebar-brand">
         <button class="btn-link" onclick = "$('#menu-close').click(); window.location='#top'">Агентство</button>
       </li>
@@ -57,7 +60,7 @@
   <header id="top" class="header">
     <div class="text-vertical-center">
       <div style="margin: 0; padding: 0; font-size: 4.5em; font-weight: 700;">Твой Дом</div>
-      <div style="margin-top: 20;margin-bottom: 10;font-weight: 500; font-size: 24">Агентство недвижимости</div>
+      <div style="margin-top: 20px;margin-bottom: 10px;font-weight: 500; font-size: 24px">Агентство недвижимости</div>
       <br>
       <a href="#about" class="btn btn-dark btn-lg">Узнать больше >></a>
     </div>
@@ -175,6 +178,7 @@
         balloonContentBody: 'Москва, Старомонетный переулок, 10'
       });
       map.geoObjects.add(placemark);
+      alert(map)
     }
   </script>
 
@@ -182,7 +186,7 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-lg-10 col-lg-offset-1 text-center" id="contact">
+        <div class="col-lg-10 col-lg-offset-1 text-center" id="text_contact">
           <h4><strong>Твой Дом</strong>
           </h4>
           <p>г. Москва<br>Старомонетный переулок, 10</p>
@@ -194,10 +198,10 @@
           <br>
           <ul class="list-inline">
             <li>
-              <a href="https://vk.com/"><i class="fa fa-vk fa-fw fa-3x"></a></i>
+              <a href="https://vk.com/"><i class="fa fa-vk fa-fw fa-3x"></i></a>
             </li>
             <li>
-              <a href="http://example.com/"><i class="fa fa-link fa-fw fa-3x"></a></i>
+              <a href="http://example.com/"><i class="fa fa-link fa-fw fa-3x"></i></a>
             </li>
           </ul>
         </div>
