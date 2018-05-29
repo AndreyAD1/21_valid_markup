@@ -1,6 +1,7 @@
 # Site of Real Estate Agency
 
-[TODO. There will be project description]
+This is [a site](https://andreyad1.github.io/21_valid_markup/) 
+of hypothetical real estate agency.
 
 # Project Goals
 
